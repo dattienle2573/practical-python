@@ -8,14 +8,14 @@ This section discusses lists, dictionaries, and sets.
 
 Programs often have to work with many objects.
 
-* A portfolio of stocks
-* A table of stock prices
+- A portfolio of stocks
+- A table of stock prices
 
 There are three main choices to use.
 
-* Lists. Ordered data.
-* Dictionaries. Unordered data.
-* Sets. Unordered collection of unique items.
+- Lists. Ordered data.
+- Dictionaries. Unordered data.
+- Sets. Unordered collection of unique items.
 
 ### Lists as a Container
 
@@ -60,7 +60,7 @@ with open('Data/portfolio.csv', 'rt') as f:
 
 ### Dicts as a Container
 
-Dictionaries are useful if you want fast random lookups (by key name).  For
+Dictionaries are useful if you want fast random lookups (by key name). For
 example, a dictionary of stock prices:
 
 ```python
@@ -108,7 +108,7 @@ with open('Data/prices.csv', 'rt') as f:
 
 Note: If you try this on the `Data/prices.csv` file, you'll find that
 it almost works--there's a blank line at the end that causes it to
-crash.  You'll need to figure out some way to modify the code to
+crash. You'll need to figure out some way to modify the code to
 account for that (see Exercise 2.6).
 
 ### Dictionary Lookups
@@ -159,7 +159,7 @@ Then to access:
 >>>
 ```
 
-*Neither a list, a set, nor another dictionary can serve as a dictionary key, because lists and dictionaries are mutable.*
+_Neither a list, a set, nor another dictionary can serve as a dictionary key, because lists and dictionaries are mutable._
 
 ### Sets
 
@@ -208,12 +208,12 @@ s1 - s2                 # Set difference { 'a', 'b' }
 ## Exercises
 
 In these exercises, you start building one of the major programs used
-for the rest of this course.  Do your work in the file `Work/report.py`.
+for the rest of this course. Do your work in the file `Work/report.py`.
 
 ### Exercise 2.4: A list of tuples
 
 The file `Data/portfolio.csv` contains a list of stocks in a
-portfolio.  In [Exercise 1.30](../01_Introduction/07_Functions.md), you
+portfolio. In [Exercise 1.30](../01_Introduction/07_Functions.md), you
 wrote a function `portfolio_cost(filename)` that read this file and
 performed a simple calculation.
 
@@ -238,9 +238,9 @@ def portfolio_cost(filename):
     return total_cost
 ```
 
-Using this code as a rough guide, create a new file `report.py`.  In
+Using this code as a rough guide, create a new file `report.py`. In
 that file, define a function `read_portfolio(filename)` that opens a
-given portfolio file and reads it into a list of tuples.  To do this,
+given portfolio file and reads it into a list of tuples. To do this,
 you’re going to make a few minor modifications to the above code.
 
 First, instead of defining `total_cost = 0`, you’ll make a variable
@@ -266,7 +266,7 @@ Experiment with your function interactively (just a reminder that in
 order to do this, you first have to run the `report.py` program in the
 interpreter):
 
-*Hint: Use `-i` when executing the file in the terminal*
+_Hint: Use `-i` when executing the file in the terminal_
 
 ```python
 >>> portfolio = read_portfolio('Data/portfolio.csv')
@@ -290,7 +290,7 @@ interpreter):
 ```
 
 This list of tuples that you have created is very similar to a 2-D
-array.  For example, you can access a specific column and row using a
+array. For example, you can access a specific column and row using a
 lookup such as `portfolio[row][column]` where `row` and `column` are
 integers.
 
@@ -309,7 +309,7 @@ That said, you can also rewrite the last for-loop using a statement like this:
 ### Exercise 2.5: List of Dictionaries
 
 Take the function you wrote in Exercise 2.4 and modify to represent each
-stock in the portfolio with a dictionary instead of a tuple.  In this
+stock in the portfolio with a dictionary instead of a tuple. In this
 dictionary use the field names of "name", "shares", and "price" to
 represent the different columns in the input file.
 
@@ -339,7 +339,7 @@ Exercise 2.4.
 ```
 
 Here, you will notice that the different fields for each entry are
-accessed by key names instead of numeric column numbers.  This is
+accessed by key names instead of numeric column numbers. This is
 often preferred because the resulting code is easier to read later.
 
 Viewing large dictionaries and lists can be messy. To clean up the
@@ -361,7 +361,7 @@ output for debugging, consider using the `pprint` function.
 ### Exercise 2.6: Dictionaries as a container
 
 A dictionary is a useful way to keep track of items where you want to
-look up items using an index other than an integer.  In the Python
+look up items using an index other than an integer. In the Python
 shell, try playing with a dictionary:
 
 ```python
@@ -426,8 +426,8 @@ have some blank lines in it. Notice how the last row of data above is
 an empty list—meaning no data was present on that line.
 
 There’s a possibility that this could cause your program to die with
-an exception.  Use the `try` and `except` statements to catch this as
-appropriate.  Thought: would it be better to guard against bad data with
+an exception. Use the `try` and `except` statements to catch this as
+appropriate. Thought: would it be better to guard against bad data with
 an `if`-statement instead?
 
 Once you have written your `read_prices()` function, test it

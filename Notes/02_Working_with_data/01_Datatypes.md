@@ -8,9 +8,9 @@ This section introduces data structures in the form of tuples and dictionaries.
 
 Python has a few primitive types of data:
 
-* Integers
-* Floating point numbers
-* Strings (text)
+- Integers
+- Floating point numbers
+- Strings (text)
 
 We learned about these in the introduction.
 
@@ -20,7 +20,7 @@ We learned about these in the introduction.
 email_address = None
 ```
 
-`None` is often used as a placeholder for optional or missing value.  It
+`None` is often used as a placeholder for optional or missing value. It
 evaluates as `False` in conditionals.
 
 ```python
@@ -38,9 +38,9 @@ Real programs have more complex data. For example information about a stock hold
 
 This is an "object" with three parts:
 
-* Name or symbol of the stock ("GOOG", a string)
-* Number of shares (100, an integer)
-* Price (490.10 a float)
+- Name or symbol of the stock ("GOOG", a string)
+- Number of shares (100, an integer)
+- Price (490.10 a float)
 
 ### Tuples
 
@@ -65,8 +65,8 @@ t = ()            # An empty tuple
 w = ('GOOG', )    # A 1-item tuple
 ```
 
-Tuples are often used to represent *simple* records or structures.
-Typically, it is a single *object* of multiple parts. A good analogy: *A tuple is like a single row in a database table.*
+Tuples are often used to represent _simple_ records or structures.
+Typically, it is a single _object_ of multiple parts. A good analogy: _A tuple is like a single row in a database table._
 
 Tuple contents are ordered (like an array).
 
@@ -92,7 +92,7 @@ s = (s[0], 75, s[2])
 
 ### Tuple Packing
 
-Tuples are more about packing related items together into a single *entity*.
+Tuples are more about packing related items together into a single _entity_.
 
 ```python
 s = ('GOOG', 100, 490.1)
@@ -121,7 +121,7 @@ ValueError: too many values to unpack
 ### Tuples vs. Lists
 
 Tuples look like read-only lists. However, tuples are most often used
-for a *single item* consisting of multiple parts.  Lists are usually a
+for a _single item_ consisting of multiple parts. Lists are usually a
 collection of distinct items, usually all of the same type.
 
 ```python
@@ -132,8 +132,8 @@ symbols = [ 'GOOG', 'AAPL', 'IBM' ]  # A List representing three stock symbols
 
 ### Dictionaries
 
-A dictionary is mapping of keys to values.  It's also sometimes called a hash table or
-associative array.  The keys serve as indices for accessing values.
+A dictionary is mapping of keys to values. It's also sometimes called a hash table or
+associative array. The keys serve as indices for accessing values.
 
 ```python
 s = {
@@ -172,8 +172,8 @@ To delete a value use the `del` statement.
 
 ### Why dictionaries?
 
-Dictionaries are useful when there are *many* different values and those values
-might be modified or manipulated.  Dictionaries make your code more readable.
+Dictionaries are useful when there are _many_ different values and those values
+might be modified or manipulated. Dictionaries make your code more readable.
 
 ```python
 s['price']
@@ -200,8 +200,8 @@ file row-by-row.
 ```
 
 Although reading the file is easy, you often want to do more with the
-data than read it.  For instance, perhaps you want to store it and
-start performing some calculations on it.  Unfortunately, a raw "row"
+data than read it. For instance, perhaps you want to store it and
+start performing some calculations on it. Unfortunately, a raw "row"
 of data doesn’t give you enough to work with. For example, even a
 simple math calculation doesn’t work:
 
@@ -216,7 +216,7 @@ TypeError: can't multiply sequence by non-int of type 'str'
 
 To do more, you typically want to interpret the raw data in some way
 and turn it into a more useful kind of object so that you can work
-with it later.  Two simple options are tuples or dictionaries.
+with it later. Two simple options are tuples or dictionaries.
 
 ### Exercise 2.1: Tuples
 
@@ -246,7 +246,7 @@ Is math broken in Python? What’s the deal with the answer of
 
 This is an artifact of the floating point hardware on your computer
 only being able to accurately represent decimals in Base-2, not
-Base-10.  For even simple calculations involving base-10 decimals,
+Base-10. For even simple calculations involving base-10 decimals,
 small errors are introduced. This is normal, although perhaps a bit
 surprising if you haven’t seen it before.
 
@@ -281,7 +281,7 @@ completely new tuple that replaces the old one.
 ```
 
 Whenever you reassign an existing variable name like this, the old
-value is discarded.  Although the above assignment might look like you
+value is discarded. Although the above assignment might look like you
 are modifying the tuple, you are actually creating a new tuple and
 throwing the old one away.
 

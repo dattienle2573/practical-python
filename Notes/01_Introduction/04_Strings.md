@@ -28,13 +28,13 @@ Normally strings may only span a single line. Triple quotes capture all text enc
 including all formatting.
 
 There is no difference between using single (') versus double (")
-quotes. *However, the same type of quote used to start a string must be used to
-terminate it*.
+quotes. _However, the same type of quote used to start a string must be used to
+terminate it_.
 
 ### String escape codes
 
 Escape codes are used to represent control characters and characters that can't be easily typed
-directly at the keyboard.  Here are some common escape codes:
+directly at the keyboard. Here are some common escape codes:
 
 ```
 '\n'      Line feed
@@ -48,7 +48,7 @@ directly at the keyboard.  Here are some common escape codes:
 ### String Representation
 
 Each character in a string is stored internally as a so-called Unicode "code-point" which is
-an integer.  You can specify an exact code-point value using the following escape sequences:
+an integer. You can specify an exact code-point value using the following escape sequences:
 
 ```python
 a = '\xf1'          # a = 'ñ'
@@ -81,7 +81,7 @@ f = a[3:8]    # 'lo wo'
 g = a[-5:]    # 'world'
 ```
 
-The character at the ending index is not included.  Missing indices assume the beginning or ending of the string.
+The character at the ending index is not included. Missing indices assume the beginning or ending of the string.
 
 ### String operations
 
@@ -214,7 +214,7 @@ text = data.decode('utf-8') # bytes -> text
 data = text.encode('utf-8') # text -> bytes
 ```
 
-The `'utf-8'` argument specifies a character encoding.  Other common
+The `'utf-8'` argument specifies a character encoding. Other common
 values include `'ascii'` and `'latin1'`.
 
 ### Raw Strings
@@ -249,20 +249,20 @@ A string with formatted expression substitution.
 >>>
 ```
 
-**Note: This requires Python 3.6 or newer.**  The meaning of the format codes
+**Note: This requires Python 3.6 or newer.** The meaning of the format codes
 is covered later.
 
 ## Exercises
 
 In these exercises, you'll experiment with operations on Python's
-string type.  You should do this at the Python interactive prompt
-where you can easily see the results.  Important note:
+string type. You should do this at the Python interactive prompt
+where you can easily see the results. Important note:
 
 > In exercises where you are supposed to interact with the interpreter,
 > `>>>` is the interpreter prompt that you get when Python wants
-> you to type a new statement.  Some statements in the exercise span
+> you to type a new statement. Some statements in the exercise span
 > multiple lines--to get these statements to run, you may have to hit
-> 'return' a few times.  Just a reminder that you *DO NOT* type
+> 'return' a few times. Just a reminder that you _DO NOT_ type
 > the `>>>` when working these examples.
 
 Start by defining a string containing a series of stock ticker symbols like this:
@@ -317,7 +317,7 @@ the end of `symbols`:
 >>>
 ```
 
-Oops!  That's not what you wanted. Fix it so that the `symbols` variable holds the value `'AAPL,IBM,MSFT,YHOO,SCO,GOOG'`.
+Oops! That's not what you wanted. Fix it so that the `symbols` variable holds the value `'AAPL,IBM,MSFT,YHOO,SCO,GOOG'`.
 
 ```python
 >>> symbols = ?
@@ -336,15 +336,15 @@ Add `'HPQ'` to the front the string:
 ```
 
 In these examples, it might look like the original string is being
-modified, in an apparent violation of strings being read only.  Not
+modified, in an apparent violation of strings being read only. Not
 so. Operations on strings create an entirely new string each
 time. When the variable name `symbols` is reassigned, it points to the
-newly created string.  Afterwards, the old string is destroyed since
+newly created string. Afterwards, the old string is destroyed since
 it's not being used anymore.
 
 ### Exercise 1.15: Membership testing (substring testing)
 
-Experiment with the `in` operator to check for substrings.  At the
+Experiment with the `in` operator to check for substrings. At the
 interactive prompt, try these operations:
 
 ```python
@@ -357,7 +357,7 @@ True
 >>>
 ```
 
-*Why did the check for `'AA'` return `True`?*
+_Why did the check for `'AA'` return `True`?_
 
 ### Exercise 1.16: String Methods
 
@@ -371,7 +371,7 @@ At the Python interactive prompt, try experimenting with some of the string meth
 >>>
 ```
 
-Remember, strings are always read-only.  If you want to save the result of an operation, you need to place it in a variable:
+Remember, strings are always read-only. If you want to save the result of an operation, you need to place it in a variable:
 
 ```python
 >>> lowersyms = symbols.lower()
@@ -414,11 +414,10 @@ To do that, use an f-string. For example:
 Modify the `mortgage.py` program from [Exercise 1.10](03_Numbers.md) to create its output using f-strings.
 Try to make it so that output is nicely aligned.
 
-
 ### Exercise 1.18: Regular Expressions
 
 One limitation of the basic string operations is that they don't
-support any kind of advanced pattern matching.  For that, you
+support any kind of advanced pattern matching. For that, you
 need to turn to Python's `re` module and regular expressions.
 Regular expression handling is a big topic, but here is a short
 example:
@@ -438,16 +437,15 @@ example:
 For more information about the `re` module, see the official documentation at
 [https://docs.python.org/library/re.html](https://docs.python.org/3/library/re.html).
 
-
 ### Commentary
 
 As you start to experiment with the interpreter, you often want to
-know more about the operations supported by different objects.  For
+know more about the operations supported by different objects. For
 example, how do you find out what operations are available on a
 string?
 
 Depending on your Python environment, you might be able to see a list
-of available methods via tab-completion.  For example, try typing
+of available methods via tab-completion. For example, try typing
 this:
 
 ```python
@@ -457,7 +455,7 @@ this:
 ```
 
 If hitting tab doesn't do anything, you can fall back to the
-builtin-in `dir()` function.  For example:
+builtin-in `dir()` function. For example:
 
 ```python
 >>> s = 'hello'

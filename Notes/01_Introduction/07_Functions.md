@@ -2,8 +2,8 @@
 
 # 1.7 Functions
 
-As your programs start to get larger, you'll want to get organized.  This section
-briefly introduces functions and library modules.  Error handling with exceptions is also introduced.
+As your programs start to get larger, you'll want to get organized. This section
+briefly introduces functions and library modules. Error handling with exceptions is also introduced.
 
 ### Custom Functions
 
@@ -49,7 +49,7 @@ We will cover libraries and modules in more detail later.
 
 ### Errors and exceptions
 
-Functions report errors as exceptions.  An exception causes a function to abort and may
+Functions report errors as exceptions. An exception causes a function to abort and may
 cause your entire program to stop if unhandled.
 
 Try this in your python REPL.
@@ -84,8 +84,8 @@ for line in file:
 The name `ValueError` must match the kind of error you are trying to catch.
 
 It is often difficult to know exactly what kinds of errors might occur
-in advance depending on the operation being performed.  For better or
-for worse, exception handling often gets added *after* a program has
+in advance depending on the operation being performed. For better or
+for worse, exception handling often gets added _after_ a program has
 unexpectedly crashed (i.e., "oh, we forgot to catch that error. We
 should handle that!").
 
@@ -131,7 +131,7 @@ Try typing a command such as `help(greeting)` to see it displayed.
 ### Exercise 1.30: Turning a script into a function
 
 Take the code you wrote for the `pcost.py` program in [Exercise 1.27](06_Files.md)
-and turn it into a function `portfolio_cost(filename)`.  This
+and turn it into a function `portfolio_cost(filename)`. This
 function takes a filename as input, reads the portfolio data in that
 file, and returns the total cost of the portfolio as a float.
 
@@ -191,9 +191,9 @@ message, and continue processing the rest of the file.
 
 ### Exercise 1.32: Using a library function
 
-Python comes with a large standard library of useful functions.  One
+Python comes with a large standard library of useful functions. One
 library that might be useful here is the `csv` module. You should use
-it whenever you have to work with CSV data files.  Here is an example
+it whenever you have to work with CSV data files. Here is an example
 of how it works:
 
 ```python
@@ -218,7 +218,7 @@ of how it works:
 ```
 
 One nice thing about the `csv` module is that it deals with a variety
-of low-level details such as quoting and proper comma splitting.  In
+of low-level details such as quoting and proper comma splitting. In
 the above output, you’ll notice that it has stripped the double-quotes
 away from the names in the first column.
 

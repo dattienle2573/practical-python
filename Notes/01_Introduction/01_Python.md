@@ -4,17 +4,17 @@
 
 ### What is Python?
 
-Python is an interpreted high level programming language.  It is often classified as a
+Python is an interpreted high level programming language. It is often classified as a
 ["scripting language"](https://en.wikipedia.org/wiki/Scripting_language) and
-is considered similar to languages such as Perl, Tcl, or Ruby.  The syntax
+is considered similar to languages such as Perl, Tcl, or Ruby. The syntax
 of Python is loosely inspired by elements of C programming.
 
 Python was created by Guido van Rossum around 1990 who named it in honor of Monty Python.
 
 ### Where to get Python?
 
-[Python.org](https://www.python.org/) is where you obtain Python.  For the purposes of this course, you
-only need a basic installation.  I recommend installing Python 3.6 or newer. Python 3.6 is used in the notes
+[Python.org](https://www.python.org/) is where you obtain Python. For the purposes of this course, you
+only need a basic installation. I recommend installing Python 3.6 or newer. Python 3.6 is used in the notes
 and solutions.
 
 ### Why was Python created?
@@ -53,8 +53,8 @@ stop, finish a short tutorial on that first, and then return here.
 
 Although there are many non-shell environments where you can code
 Python, you will be a stronger Python programmer if you are able to
-run, debug, and interact with Python at the terminal.  This is
-Python's native environment.  If you are able to use Python here, you
+run, debug, and interact with Python at the terminal. This is
+Python's native environment. If you are able to use Python here, you
 will be able to use it everywhere else.
 
 ## Exercises
@@ -106,7 +106,7 @@ related to built-in functions).
 This course is structured as a series of traditional web pages where
 you are encouraged to try interactive Python code samples **by typing
 them out by hand.** If you are learning Python for the first time,
-this "slow approach" is encouraged.  You will get a better feel for
+this "slow approach" is encouraged. You will get a better feel for
 the language by slowing down, typing things in, and thinking about
 what you are doing.
 
@@ -146,8 +146,8 @@ the class by typing in code slowly and thinking about it--not cut and pasting.
 ### Exercise 1.4: Where is My Bus?
 
 Note: This was a whimsical example that was a real crowd-pleaser when
-I taught this course in my office.  You could query the bus and then
-literally watch it pass by the window out front.  Sadly, APIs rarely live
+I taught this course in my office. You could query the bus and then
+literally watch it pass by the window out front. Sadly, APIs rarely live
 forever and it seems that this one has now ridden off into the sunset. --Dave
 
 Try something more advanced and type these statements to find out how
@@ -176,7 +176,7 @@ the predictions change.
 
 Note: This service only reports arrival times within the next 30 minutes.
 If you're in a different timezone and it happens to be 3am in Chicago, you
-might not get any output.  You use the tracker link above to double check.
+might not get any output. You use the tracker link above to double check.
 
 If the first import statement `import urllib.request` fails, you’re
 probably using Python 2. For this course, you need to make sure you’re
@@ -193,8 +193,7 @@ exercise work. For example:
 >>>
 ```
 
-If you can't make this work, don't worry about it.  The rest of this course
+If you can't make this work, don't worry about it. The rest of this course
 has nothing to do with parsing XML.
 
 [Contents](../Contents.md) \| [Next (1.2 A First Program)](02_Hello_world.md)
-

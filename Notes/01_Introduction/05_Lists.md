@@ -13,7 +13,7 @@ names = [ 'Elwood', 'Jake', 'Curtis' ]
 nums = [ 39, 38, 42, 65, 111]
 ```
 
-Sometimes lists are created by other methods.  For example, a string can be split into a
+Sometimes lists are created by other methods. For example, a string can be split into a
 list using the `split()` method:
 
 ```python
@@ -121,8 +121,8 @@ names.remove('Curtis')
 del names[1]
 ```
 
-Removing an item does not create a hole.  Other items will move down
-to fill the space vacated.  If there are more than one occurrence of
+Removing an item does not create a hole. Other items will move down
+to fill the space vacated. If there are more than one occurrence of
 the element, `remove()` will remove only the first occurrence.
 
 ### List Sorting
@@ -150,7 +150,7 @@ t = sorted(s)               # s unchanged, t holds sorted values
 
 ### Lists and Math
 
-*Caution: Lists were not designed for math operations.*
+_Caution: Lists were not designed for math operations._
 
 ```python
 >>> nums = [1, 2, 3, 4, 5]
@@ -250,11 +250,11 @@ Check this out by typing the following loop and watching what happens:
 Use the `in` or `not in` operator to check if `'AIG'`,`'AA'`, and `'CAT'` are in the list of symbols.
 
 ```python
->>> # Is 'AIG' IN the `symlist`?
+>>> 'AIG' in symlist
 True
->>> # Is 'AA' IN the `symlist`?
+>>> 'AA' in symlist
 False
->>> # Is 'CAT' NOT IN the `symlist`?
+>>> 'CAT' not in symlist
 True
 >>>
 ```
@@ -264,7 +264,7 @@ True
 Use the `append()` method to add the symbol `'RHT'` to end of `symlist`.
 
 ```python
->>> # append 'RHT'
+>>> symlist.append('RHT')
 >>> symlist
 ['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG', 'RHT']
 >>>
@@ -273,7 +273,7 @@ Use the `append()` method to add the symbol `'RHT'` to end of `symlist`.
 Use the `insert()` method to insert the symbol `'AA'` as the second item in the list.
 
 ```python
->>> # Insert 'AA' as the second item in the list
+>>> symlist.insert(2, 'AA')
 >>> symlist
 ['HPQ', 'AA', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG', 'RHT']
 >>>
@@ -282,7 +282,7 @@ Use the `insert()` method to insert the symbol `'AA'` as the second item in the 
 Use the `remove()` method to remove `'MSFT'` from the list.
 
 ```python
->>> # Remove 'MSFT'
+>>> symlist.remove('MSFT')
 >>> symlist
 ['HPQ', 'AA', 'AAPL', 'AIG', 'YHOO', 'GOOG', 'RHT']
 >>>
@@ -290,10 +290,10 @@ Use the `remove()` method to remove `'MSFT'` from the list.
 
 Append a duplicate entry for `'YHOO'` at the end of the list.
 
-*Note: it is perfectly fine for a list to have duplicate values.*
+_Note: it is perfectly fine for a list to have duplicate values._
 
 ```python
->>> # Append 'YHOO'
+>>> symlist.append('YHOO')
 >>> symlist
 ['HPQ', 'AA', 'AAPL', 'AIG', 'YHOO', 'GOOG', 'RHT', 'YHOO']
 >>>
@@ -302,7 +302,7 @@ Append a duplicate entry for `'YHOO'` at the end of the list.
 Use the `index()` method to find the first position of `'YHOO'` in the list.
 
 ```python
->>> # Find the first index of 'YHOO'
+>>> symlist.index('YHOO')
 4
 >>> symlist[4]
 'YHOO'
@@ -320,7 +320,7 @@ Count how many times `'YHOO'` is in the list:
 Remove the first occurrence of `'YHOO'`.
 
 ```python
->>> # Remove first occurrence 'YHOO'
+>>> symlist.remove('YHOO')
 >>> symlist
 ['HPQ', 'AA', 'AAPL', 'AIG', 'GOOG', 'RHT', 'YHOO']
 >>>
@@ -331,7 +331,7 @@ However, we'll see an elegant way to do this in section 2.
 
 ### Exercise 1.23: Sorting
 
-Want to sort a list?  Use the `sort()` method. Try it out:
+Want to sort a list? Use the `sort()` method. Try it out:
 
 ```python
 >>> symlist.sort()
@@ -349,7 +349,7 @@ Want to sort in reverse? Try this:
 >>>
 ```
 
-Note: Sorting a list modifies its contents 'in-place'.  That is, the elements of the list are shuffled around, but no new list is created as a result.
+Note: Sorting a list modifies its contents 'in-place'. That is, the elements of the list are shuffled around, but no new list is created as a result.
 
 ### Exercise 1.24: Putting it all back together
 
@@ -406,9 +406,9 @@ You can access items in the nested lists by using multiple indexing operations.
 
 Even though it is technically possible to make very complicated list
 structures, as a general rule, you want to keep things simple.
-Usually lists hold items that are all the same kind of value.  For
+Usually lists hold items that are all the same kind of value. For
 example, a list that consists entirely of numbers or a list of text
-strings.  Mixing different kinds of data together in the same list is
+strings. Mixing different kinds of data together in the same list is
 often a good way to make your head explode so it's best avoided.
 
 [Contents](../Contents.md) \| [Previous (1.4 Strings)](04_Strings.md) \| [Next (1.6 Files)](06_Files.md)

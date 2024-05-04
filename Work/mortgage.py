@@ -17,17 +17,17 @@ for i in range(12):
         principal = principal * (1 + rate / 12) - (payment + extra_payment)
         total_paid = total_paid + (payment + extra_payment)
         month += 1
-        print(month, total_paid, principal)
+        print(f"{month:5}, {total_paid:10.2f}, {principal:10.2f}")
 
 while principal > 0 and principal * (1 + rate / 12) > payment:
     principal = principal * (1 + rate / 12) - payment
     total_paid = total_paid + payment
     month += 1
-    print(month, total_paid, principal)
+    print(f"{month:5}, {total_paid:10.2f}, {principal:10.2f}")
 
 total_paid = total_paid + principal * (1 + rate / 12)
 principal = 0
 month += 1
-print(month, total_paid, principal)
+print(f"{month:5}, {total_paid:10.2f}, {principal:10.2f}")
 
-print("Total paid", total_paid, "month", month)
+print(f"Total paid {total_paid} month {month}")
